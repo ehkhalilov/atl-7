@@ -1,0 +1,44 @@
+server:
+  port: 8088
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
+  servlet:
+    session:
+      timeout: 3s
+
+
+
+
+
+db-username:
+  elnur
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/atl_academy_7
+    username: postgres
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yaml
+  mvc:
+    static-path-pattern: /content/**
+  messages:
+    encoding: UTF-8
+  thymeleaf:
+    encoding: UTF-8
+
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    enabled: 'true'
+    path: /swagger-ui.html
+
+
+
+
+
+

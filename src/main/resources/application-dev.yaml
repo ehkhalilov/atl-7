@@ -1,0 +1,17 @@
+
+server:
+  port: 8088
+
+db:
+  password: 98765
+  username: murad
+
+environment:
+  name: ${OS}
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    enabled: 'true'
+    path: /swagger-ui.html
